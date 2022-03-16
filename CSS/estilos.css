@@ -5,16 +5,17 @@
 #VIDEOHOME {
   z-index: -1; }
 
-@font-face {
-  font-family: FUENTE1;
-  font-style: normal;
-  src: url(LeagueGothic-Regular.otf);
+  @font-face{
+    font-family: FUENTE1;
+    font-style: normal;
+    src: url(/media/LeagueGothic-Regular.otf)
 }
 
-@font-face {
-  font-family: FUENTE2;
-  font-style: normal;
-  src: url(RobotoCondensed-Light.ttf); }
+@font-face{
+    font-family: FUENTE2;
+    font-style: normal;
+    src: url(/media/RobotoCondensed-Light.ttf);
+}
 
 .menu ul li {
   font-size: 30px;
@@ -70,7 +71,7 @@ footer {
   border-style: none;
   width: auto; }
 
-.BOTON {
+.BOTON, .nbtn {
   font-size: FUENTE1;
   font-size: 14px;
   border-style: solid;
@@ -104,9 +105,9 @@ footer {
   margin-right: 50px;
   text-align: justify; }
 
-.BOTONCOMPRA {
+.BOTONCOMPRA, .nbtn {
   padding-left: 100px; }
-  .BOTONCOMPRA :hover {
+  .BOTONCOMPRA :hover, .nbtn :hover {
     background-color: #ffec38;
     border-style: none; }
 
@@ -119,3 +120,31 @@ footer {
   font-size: 50px;
   font-family: FUENTE1;
   color: black; }
+
+.carrito {
+  font-size: 110px; }
+
+.carrito2 {
+  font-size: 50px; }
+
+.ntitulos {
+  padding-left: 60px;
+  color: black; }
+
+.nsubtitulos {
+  padding-left: 100px;
+  color: black; }
+
+.ncontenido {
+  padding-left: 100px;
+  color: black; }
+
+.nbtn {
+  background-color: #ffec38;
+  font-weight: bolder; }
+
+.ntitulosgral {
+  color: black;
+  font-size: 110px;
+  padding-left: 60px;
+  font-family: FUENTE1; }

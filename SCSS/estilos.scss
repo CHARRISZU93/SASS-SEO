@@ -7,7 +7,7 @@
     src: url(/media/LeagueGothic-Regular.otf);
 }
   
-  @font-face {
+@font-face {
     font-family: FUENTE2;
     font-style: normal;
     src: url(/media/RobotoCondensed-Light.ttf); 
@@ -139,4 +139,55 @@ footer{
     font-size: 50px; 
     font-family: FUENTE1; 
     color: $color_texto; 
+}
+
+$carritos:(carrito:110px, carrito2:50px);
+
+@each $a, $b in $carritos {
+    .#{$a} {
+        font-size: $b;
+    }
+};
+
+$tipo1: (
+    relleno: 100px,
+    color: black
+);
+
+$tipo2: (
+    relleno: 60px,
+    color: black
+);
+
+.ntitulos {
+    padding-left: map-get($tipo2, relleno);
+    color: map-get($tipo2, color);
+};
+
+.nsubtitulos {
+    padding-left: map-get($tipo1, relleno);
+    color: map-get($tipo1, color);
+};
+
+.ncontenido {
+    padding-left: map-get($tipo1, relleno);
+    color: map-get($tipo1, color);
+};
+
+.nbtn{
+    @extend .BOTON;
+    @extend .BOTONCOMPRA;
+    background-color: $color_fuente;
+    font-weight: bolder;
+}
+
+@mixin general ($color_fuente, $tamano_fuente, $relleno_izq, $fuente){   
+    color: $color_fuente;
+    font-size: $tamano_fuente;
+    padding-left: $relleno_izq;
+    font-family: $fuente;
+}
+
+.ntitulosgral{
+    @include general($color_texto,110px,60px,FUENTE1)
 }
