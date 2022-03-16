@@ -5,17 +5,14 @@
 #VIDEOHOME {
   z-index: -1; }
 
-  @font-face{
-    font-family: FUENTE1;
-    font-style: normal;
-    src: url(/media/LeagueGothic-Regular.otf)
-}
+@font-face {
+  font-family: FUENTE1;
+  src: url(../media/LeagueGothic-Regular.otf); }
 
-@font-face{
-    font-family: FUENTE2;
-    font-style: normal;
-    src: url(/media/RobotoCondensed-Light.ttf);
-}
+@font-face {
+  font-family: FUENTE2;
+  font-style: normal;
+  src: url(../media/RobotoCondensed-Light.ttf); }
 
 .menu ul li {
   font-size: 30px;
